@@ -11,7 +11,7 @@
 
 enum mode_types current_mode;
 enum change_time_types adjust_time;
-uint8_t adjust_time = 0;
+//uint8_t adjust_time = 0;
 uint8_t time;
 
 //char* string = "TODAY IS A GOOD DAY";
