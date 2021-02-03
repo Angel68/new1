@@ -1,3 +1,10 @@
+/*
+ * i2c.c
+ *
+ * Created: 1/9/2020 3:14:46 PM
+ *  Author: Angel68
+ */ 
+
 #include <i2c.h>
 
 void i2c_init(void){

@@ -1,8 +1,18 @@
+/*
+ * sh1106.h
+ *
+ * Created: 1/9/2020 3:41:04 PM
+ *  Author: Angel68
+ */ 
+
+
 #ifndef SH1106_H_
 #define SH1106_H_
 
+	//#include "Smartwatch3.h"
+	#include <include/stdint.h>
 	#include "i2c.h"
-
+	
 	// Basic definitions
 	#define SH1106_ADDRESS          0x3C
 	#define SH1106_I2C_WRITE        ((SH1106_ADDRESS << 1) + I2C_WRITE)
@@ -14,8 +24,8 @@
 	#define SET_CONTRAST            0x81   // [2]
 	#define SET_SEGMENT_REMAP_0_0   0xA0
 	#define SET_SEGMENT_REMAP_127_0 0xA1
-	#define ENTIRE_DISPLAY_ON       0xA4
-	#define ENTIRE_DISPLAY_OFF      0xA5
+	#define DISPLAY_POWER_ON        0xA4
+	#define DISPLAY_POWER_OFF       0xA5
 	#define SET_NORMAL_DISPLAY      0xA6
 	#define SET_INVERCED_DISPLAY    0xA7
 	#define SET_DISPLAY_OFF         0xAE
@@ -57,7 +67,9 @@
 	void sh1106_init(void);
 	void sh1106_cls(void);
 	void sh1106_test(void);
-	void sh1106_transmit(uint8_t x, uint8_t y, uint8_t *data, uint8_t length);
-	void sh1106_print(uint8_t x, uint8_t y, uint8_t *string, uint8_t length);
+	/*void sh1106_transmit(uint8_t x, uint8_t y, uint8_t data);
+	void sh1106_print(uint8_t x, uint8_t y, char* string, uint8_t length);*/
+	void sh1106_print(uint8_t x, uint8_t y, char* string, uint8_t length);
+	void sh1106_print_big_number(uint8_t x, uint8_t y, char* string);
 
 #endif	/* SH1106_H */

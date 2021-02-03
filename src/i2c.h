@@ -1,5 +1,13 @@
-#include <include/stdint.h>
+/*
+ * i2c.h
+ *
+ * Created: 1/9/2020 3:12:55 PM
+ *  Author: Angel68
+ */ 
+
+//#include "Smartwatch3.h"
 #include <include/util/twi.h>
+#include <settings.h>
 
 #ifndef I2C_H_
 #define I2C_H_

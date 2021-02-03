@@ -1,3 +1,10 @@
+/*
+ * bcd.c
+ *
+ * Created: 1/9/2020 4:09:50 PM
+ *  Author: Angel68
+ */ 
+
 #include "bcd.h"
 
 uint8_t bin2bcd(uint8_t num){	
